@@ -23,6 +23,11 @@ button {
   border: none;
 }
 
+button:hover {
+  background-color: rgb(47, 231, 255);
+  cursor: pointer;
+}
+
 ul {
   position: absolute;
   left: -25%;
@@ -30,8 +35,21 @@ ul {
   width: 160px;
   list-style: none;
   text-align: center;
+  overflow: hidden;
+  max-height: 0;
+  transition: 0.25s;
+}
+
+.dropdown-menu:hover ul {
+  max-height: 500px;
+  transition: 0.25s;
+  cursor: pointer;
 }
 
 li {
   padding: 16px;
+}
+
+ul li:hover {
+  background-color:rgb(228, 228, 228)
 }
