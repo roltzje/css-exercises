@@ -1,0 +1,17 @@
+.b1,.b2 {
+    font-size: 28px;
+    font-family: "Helvetica", "Times New Roman", sans-serif;
+}
+
+.b1 {
+    color: white;
+    border-style: inset ridge;
+    border-color: rgb(200,200,200);
+    background-color: #000000;
+}
+
+.b2 {
+    background-color: #f3f2b6;
+    border-style: outset;
+    border-color: rgb(200,200,200);
+}

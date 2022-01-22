@@ -31,8 +31,13 @@ body {
   font-weight: 600;
 }
 
-.popup-modal {
-  width: 30%;
+#trigger-modal:hover, #close-modal:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 4px black;
+}
+
+.popup-modal, .popup-modal.show {
+  width: 20%;
   height: 15%;
   background-color: white;
   border: 1px solid black;
@@ -42,6 +47,7 @@ body {
   align-items: center;
   margin-top: 10%;
   opacity: 0;
+  transition: 1s;
 }
 
 #close-modal {
@@ -51,4 +57,21 @@ body {
   border: none;
   border-radius: 5px;
   font-weight: 600;
+}
+
+.popup-modal {
+  visibility: hidden;
+}
+
+.popup-modal.show {
+  opacity: 1;
+  margin-top: 0;
+  transition: 1s;
+  visibility: visible;
+}
+
+.button-container.show {
+  background-color: #000000;
+  opacity: 40%;
+  transition: 1s;
 }
